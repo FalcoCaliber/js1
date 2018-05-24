@@ -1,26 +1,15 @@
-var myName = "Joe";
-let myBirthday = new Date("1.30.1995") ;
-const goal = "work in blockchain";
-
-console.log(myName, myBirthday, goal);
-
-let userAnswer = confirm("did you brush your teeth today?");
+/* Asks for the user's first name
+Asks for the user's last name
+Logs the user's first name to the console
+Alerts the user's last name
+*Confirms the user's birthday and alerts the resulting birthday */
 
 
-console.log(userAnswer);
+let firstName = prompt("Whats your first name?", "Joe");
+let lastName = prompt("Whats your Last name?", "Doe");
 
-let userPromptAnswer = prompt("Did you brish your teeth today?","Yes");
+console.log(firstName);
+alert(lastName);
 
-// create two let variables, 1. favorite food 2. fav movie , two const variables, ingrediants to that favorite food "array", year the movie was released"use date object", confirm the movie, alert the year the movie came out, prompt the ingredients
-
-let favFood = "Sushi";
-let favMovie= "SuperBad";
-
-const sushiIngr = ["fish","Rice", "love"];
-const movieRel = new Date("8.17.2007");
-
-confirm(favMovie);
-alert("It came out "movieRel"!");
-prompt(favFood + sushiIng);
-
-// fmllllllllllll
+let userBday = confirm("Is Today Your Birthday?");
+alert(Date.now());
