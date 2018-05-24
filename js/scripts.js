@@ -5,11 +5,21 @@ Alerts the user's last name
 *Confirms the user's birthday and alerts the resulting birthday */
 
 
-let firstName = prompt("Whats your first name?", "Joe");
+let firstName = prompt("Whats your first name?", "John");
 let lastName = prompt("Whats your Last name?", "Doe");
+let date = new Date();
+var options = {
+    month: "short", day: "numeric"
+};
 
 console.log(firstName);
-alert(lastName);
 
-let userBday = confirm("Is Today Your Birthday?");
-alert(Date.now());
+alert("Welcome " + (firstName) + " " + (lastName) + "!");
+
+let userBday = confirm("So " + (firstName) + ", Is Today Your Birthday?");
+
+if (userBday == 1) {
+  alert("Hooray! Your Birthday Is " + (date.toLocaleDateString("en-us", options)) + "!")
+} else {
+    alert("awwww...")
+};
