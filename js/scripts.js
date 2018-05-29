@@ -21,5 +21,5 @@ let userBday = confirm("So " + (firstName) + ", Is Today Your Birthday?");
 if (userBday == 1) {
   alert("Hooray! Your Birthday Is " + (date.toLocaleDateString("en-us", options)) + "!")
 } else {
-    alert("awwww...")
+    alert("awwww...") 
 };
