@@ -125,3 +125,30 @@ console.log(favoriteMovies.length);
 let titles = [];
 titles.push(favoriteMovies[0][0], favoriteMovies[1][0], favoriteMovies[2][0], favoriteMovies[3][0], favoriteMovies[4][0])
 console.log(titles);
+
+
+let i =  0 //control statement
+
+let newProduct = ["Squeaky Toy", 19.99, "Really Good Toy"];
+do {
+  //add newProduct to the second member of products array
+  if (i === 1) products[i].push(newProduct) i++; // do if's like this if you want one condition and no elses
+}
+
+while(i < products.length) {
+  //parameters
+  i++;
+}
+
+for(let i = 0; i < products.length; i++) {
+  console.log(products[i])
+}
+
+products.forEach((product) => {
+  console.log(product);
+})
+
+
+for (let i = products.length - 1; i > -1; i--) {
+  console.log(products[i])
+}
